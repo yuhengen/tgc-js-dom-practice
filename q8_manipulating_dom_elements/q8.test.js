@@ -18,9 +18,20 @@ it("should be able to select the header", async () => {
   } catch (e) {
     solution = require("./script.js");
   }  
-  expect(document.querySelector("h1").innerText.toLowerCase()).toBe("Hello world!".toLowerCase());
-  expect(document.querySelector("span#important").style.backgroundColor).toBe('red');
-  expect(document.querySelector("li.todo").style.fontFamily.toLowerCase()).toBe('Verdana'.toLowerCase());
-  expect(document.querySelector("li.todo").style.fontSize).toBe('16px');
+for (let e of document.querySelectorAll('.emphasis')) {
+    expect(e.style.fontFamily).toBe('Verdana');
+}
+
+for (let e of document.querySelectorAll('li.finished')) {
+    expect(e.style.textDecoration).toBe('line-through');
+}
+
+for (let e of document.querySelectorAll('ul#low-priority li.todo')) {
+    expect(e.style.backgroundColor).toBe('blue');
+}
+
+for (let e of document.querySelectorAll('.alert')) {
+    e.style.backgroundColor = 'red';
+}
 
 });
