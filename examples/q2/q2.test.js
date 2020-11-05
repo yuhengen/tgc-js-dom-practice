@@ -1,15 +1,7 @@
 const { JSDOM } = require('jsdom');
 const jquery = require('jquery');
 
-function eventFire(el, etype){
-  if (el.fireEvent) {
-    el.fireEvent('on' + etype);
-  } else {
-    var evObj = document.createEvent('Events');
-    evObj.initEvent(etype, true, false);
-    el.dispatchEvent(evObj);
-  }
-}
+
 
 it("Should be able able to change goodbye world to hello world!", async ()=>{
 
