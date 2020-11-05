@@ -1,17 +1,19 @@
-const { JSDOM } = require('jsdom');
+const { JSDOM } = require("jsdom");
 
-it("Should be able able to change goodbye world to hello world!", async ()=>{
- 
- const options =  {
-  resources: 'usable',
-  runScripts: 'dangerously',
-};
+it("should be able to select the header", async () => {
+  const options = {
+    resources: "usable",
+    runScripts: "dangerously"
+  };
 
-    // load the document
-    let dom = await JSDOM.fromFile(`${__dirname}/index.html`, options);
-    document.documentElement.innerHTML = dom.window.document.documentElement.innerHTML;
+  // load the document
+  let dom = await JSDOM.fromFile(`${__dirname}/index.html`, options);
+  document.documentElement.innerHTML =
+    dom.window.document.documentElement.innerHTML;
 
-    require('./script.js');
-    expect(document.querySelector('div').innerHTML).toBe('hello world!');
-    
-})
+  let { header, important, todo } = require("./script.js");
+  expect(document.querySelector("h1")).toBe(header);
+  expect(document.querySelector("span#important")).toBe(important);
+  expect(document.querySelector("li.todo")).toBe(todo);
+
+});
