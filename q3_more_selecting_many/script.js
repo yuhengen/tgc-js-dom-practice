@@ -1,5 +1,4 @@
 // PLACE YOUR CODE HERE
-<<<<<<< HEAD
 
 // REPLACE THE NULL ON EACH LINE BELOW WITH YOUR ANSWER
 // DO NOT CHANGE THE VARIABLE NAMES
@@ -26,5 +25,3 @@ let emphasisParagraph=null;
 try {
    module.exports = exports = {header2, highlight, finished, firstParagraph, emphasisParagraph};
 } catch (e) {}
-=======
->>>>>>> solutions
