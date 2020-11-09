@@ -10,7 +10,7 @@ describe("my test suite 3", () => {
     };
 
     // load the document
-    let dom = await JSDOM.fromFile(`${__dirname}/index_solution.html`, options);
+    let dom = await JSDOM.fromFile(`${__dirname}/index.html`, options);
     document.documentElement.innerHTML =
       dom.window.document.documentElement.innerHTML;
     let solution;

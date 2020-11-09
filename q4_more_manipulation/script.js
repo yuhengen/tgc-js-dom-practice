@@ -1,30 +1,24 @@
 // PLACE YOUR CODE HERE
-<<<<<<< HEAD
 
-// REPLACE THE NULL ON EACH LINE BELOW WITH YOUR ANSWER
-// DO NOT CHANGE THE VARIABLE NAMES
+let header1 = document.querySelector("h1");
+header1.style.color = "green";
 
-// Q1 - select the first <h2> element in the document
-let header2 = null;
+let updateText = document.querySelector("li.finished");
+updateText.innerText = "Repay credit card debt";
 
-// Q2 - select the first element with the class "highlight"
-let highlight = null;
+let urgent = document.querySelector("li#urgent");
+urgent.style.border = "2px solid black";
 
-// Q3 - select the first <span class="highlight"> in the document
-let spanHighlight = null;
+let emphasis = document.querySelector(".emphasis");
+emphasis.style.textDecoration = "underline";
 
-// Q4 - select the first element that has the class 'finished'
-let finished= null;
+let pemphasis = document.querySelector("p.emphasis");
+pemphasis.style.backgroundColor = "orange";
+pemphasis.style.fontSize = "32px";
+pemphasis.style.lineHeight = "24px";
 
-// Q5 - select the first <p> element in the document
-let firstParagraph=null;
+let todo = document.querySelector("li#urgent span.todo");
+todo.style.backgroundColor = "yellow";
 
-// Q6 - select the first <p class="emphasis"> in the document
-let emphasisParagraph=null;
-
-// LEAVE THE BELOW ALONE! DON'T TOUCH
-try {
-   module.exports = exports = {header2, highlight, finished, firstParagraph, emphasisParagraph};
-} catch (e) {}
-=======
->>>>>>> solutions
+let header2 = document.querySelector("h2");
+header2.innerHTML = "<span class='greetings'>About Us</span>"
