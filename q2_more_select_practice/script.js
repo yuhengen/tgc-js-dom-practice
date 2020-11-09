@@ -23,5 +23,5 @@ let emphasisParagraph=null;
 
 // LEAVE THE BELOW ALONE! DON'T TOUCH
 try {
-   module.exports = exports = {header2, highlight, finished, firstParagraph, emphasisParagraph};
+   module.exports = exports = {header2, highlight, spanHighlight, finished, firstParagraph, emphasisParagraph};
 } catch (e) {}
