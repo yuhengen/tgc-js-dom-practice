@@ -1,7 +1,7 @@
 const { JSDOM } = require("jsdom");
 fs = require("fs");
 
-it("should be able to select the header", async () => {
+it("clicking button generates random numbers", async () => {
   const options = {
     resources: "usable",
     runScripts: "dangerously",
