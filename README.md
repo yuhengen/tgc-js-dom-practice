@@ -37,3 +37,14 @@ If you just want to check all your answers, just type in the terminal:
 ```
 npm test
 ```
+
+# 4. Getting new questions
+
+To get new questions, open a **NEW** terminal and type in the terminal:
+
+```
+git fetch upstream
+git merge upstream/main
+```
+
+If there are conflicts in `script.js` files, just use your original copies.
