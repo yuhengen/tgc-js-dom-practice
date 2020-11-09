@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.querySelector('h1').style.color = 'green';
 
 document.querySelector('li.finished').innerText = "Repay credit card debt";
@@ -18,6 +17,3 @@ emphasis.style.lineHeight = "24px";
 document.querySelector('li#urgent span.todo').style.backgroundColor = 'yellow';
 
 document.querySelector('h2').innerHTML = "<span class='greetings'>About Us</span>";
-=======
-// PLACE YOUR CODE HERE
->>>>>>> upstream/main
