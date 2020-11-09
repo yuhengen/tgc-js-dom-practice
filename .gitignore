@@ -1,7 +1,8 @@
 node_modules
 solutions.*
 index_solution.html
-*/solutions.js
+/**/solutions.js
 bfg.jar
 examples
 *.jar
+solutions.js
