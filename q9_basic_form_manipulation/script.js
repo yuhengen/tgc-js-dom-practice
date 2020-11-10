@@ -1,14 +1,32 @@
+// document.querySelector("#submit").onclick = getFormValues();
+
+document.querySelector("#submit").addEventListener("click", function() {
+    getFormValues();
+})
 
 function getFormValues() {
 
-    let email = null;
+    let email = document.querySelector("#email-address").value;
 
+    let phoneModel = document.querySelectorAll(".phone-type");
     let model = null;
+    for (let m of phoneModel) {
+        if (m.checked) {
+            model = m.value;
+            break;
+        }
+    }
 
-    let services = null;
+    let selectedServices = document.querySelectorAll(".services");
+    let services = [];
+    for (let s of selectedServices) {
+        if (s.checked) {
+            services.push(s.value);
+        }
+    }
 
-    let pickup = null;
-
+    let pickup = document.querySelector("#pick-up").value;
+    
     // leave this line alone!
     return [email, model, services, pickup];
 
