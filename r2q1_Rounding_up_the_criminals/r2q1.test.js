@@ -18,6 +18,7 @@ it("should be able to select the header", async () => {
   } catch (e) {
     solution = require("./script.js");
   }
+  console.log(document.querySelectorAll(".a:not(.undercover)"))
   for (let e of document.querySelectorAll(".a:not(.undercover)")) {
     expect(e.style.backgroundColor).toBe("red");
   }
